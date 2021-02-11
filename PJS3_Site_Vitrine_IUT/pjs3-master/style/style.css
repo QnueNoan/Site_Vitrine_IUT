@@ -1,0 +1,658 @@
+body{
+    color: black;
+    font-family: "Open Sans", Arial, sans-serif!important;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    padding : 20px 0;
+    color : #747d88;
+    font-size :36px;
+    overflow: hidden;
+}
+
+h3{
+    text-align: left;
+    color : #666666;
+    font-size : 22px;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding : 0px 0px 10px;
+}
+
+/*PARTIE SUPERIEURE*/
+
+#Fixed{
+    z-index: 99!important;
+}
+
+/*HEADER*/
+#Head{
+    background-color: rgb(209, 38, 38);
+    color:white;
+    font-size: smaller;
+}
+
+#Head a{
+    color:white!important;
+}
+
+a:hover #Head{
+    color:white;
+}
+
+/*MENU*/
+
+#Menu{
+    padding:2%;
+    font-size: small;
+    color: black;
+}
+
+#Menu-Responsive{
+    display: none;
+}
+
+#imgTitre{
+    width: 13em;
+}
+
+#Menu a{
+    color:gray;
+}
+
+a:hover #Menu{
+    color:black;
+}
+
+#Covid{
+    background-color: rgb(228, 165, 3);
+    text-align: center;
+}
+
+.fixed{
+    overflow: visible;
+    background-color: white;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+#Institut, #Formations, #Entreprises, #International, #VieIUT{ 
+    text-align: center;
+}
+
+#DeroulantInstitut, #DeroulantFormations, #DeroulantEntreprises, #DeroulantInternational, #DeroulantVieIUT{
+    display: none;
+    position: absolute;
+    text-align: left;
+    
+    margin-top: 4%;
+    padding: 1em;
+
+    background: rgba(240,240,240,1.0);
+
+    min-width: 13em;
+    text-shadow: none;
+    z-index:99;
+}
+
+#Institut:hover #DeroulantInstitut{
+    display: grid;
+}
+
+#Formations:hover #DeroulantFormations{
+    display: grid;  
+}
+
+#Entreprises:hover #DeroulantEntreprises{
+    display: grid;
+}
+
+#International:hover #DeroulantInternational{
+    display: grid;
+}
+
+#VieIUT:hover #DeroulantVieIUT{
+    display: grid;
+}
+
+#Menu .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Menu .grid-item {
+    display: grid;
+    align-items: center;
+    padding: 1em;
+}
+
+.orangeSection{
+    color:white;
+    background-color: rgb(228, 165, 3);
+}
+
+/* --- RENTREE --- */
+.boîte-principale {
+    display : flex;
+    margin : 20px auto;
+    background-image : url(../images/descartes-opaque.png);
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+}
+
+#Rentrée {
+    width : 60%;
+}
+
+#site-iut {
+    width : 40%;
+}
+
+.espace {
+    margin-bottom : 10px;
+}
+
+.autreespace {
+    margin-top : 3px;
+}
+    
+.bordure {
+    border : 2px solid white;
+}
+
+.arrondie {
+    border-radius : 50px;
+}
+
+/*Réduire la largeur des bordures arrondies (pour les liens de la section rentrée)*/
+.largeur {
+    display : inline-block !important;
+    zoom : 1;
+    display : inline;
+}
+
+#Rentree a {
+    text-decoration : none;
+    color : white;
+}
+
+#Rentree p{
+    color : black;
+}
+
+#Rentree a:hover {
+    background : url("") no-repeat right;
+}
+
+.container:hover{
+    text-decoration:none;
+    color:black;
+}
+
+#Chiffres{
+    overflow: hidden;
+}
+
+.menuContent{
+    padding:8px;
+}
+
+a + .menuContent{
+    color:darkgray;
+}
+
+a:hover, .menuContent{
+    color:black;
+}
+
+.actu{
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.inner{
+    margin-top: 260px;
+}
+
+/* --- TITRES COULEURS --- */
+.orangeSection h2,#Diplomes, #Chiffres, #Rentree{
+    color: white;
+    background-color: rgb(228, 165, 3);
+    padding : 20px 0;
+}
+
+h3.titre{
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #353740!important;
+    overflow: hidden;
+}
+
+span.compteur{
+    font-size : 60px;
+}
+
+/* --- DIPLOMES --- */
+
+.container:hover{
+    text-decoration:none;
+    color:black;
+}
+
+#Diplomes {
+    color:white;
+    font: 16px Monserrat,sans-serif;
+    padding-bottom: 10%;
+}
+
+#titre{
+    font:36px Monserrat,sans-serif;
+    color:white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.image1{
+    display:block;
+}
+
+.image2{
+    display:none;
+}
+
+#soustitre{
+    font: 22px Monserrat,sans-serif;
+    color:white;
+}
+
+/* --- ACTUALITES --- */
+
+#Actualités a{
+    color:darkslategray;
+    text-decoration: none;
+}
+
+a.lireplus{
+    color: #cf0a2c!important;
+}
+
+a:hover.lireplus{
+    color:#cf0a2c;
+    text-decoration:none;
+}
+
+#Card1{
+    margin-bottom: auto;
+}
+
+#Card3{
+    margin-bottom: auto;
+}
+
+a, .card-title{
+    color: darkslategray;
+}
+
+a:hover, .card-title{
+    color: darkslategray;
+    text-decoration:none;
+}
+
+h5.card-title{
+    border-left-style: solid;
+    border-left-color: #cf0a2c;
+    padding-left: 10px;
+}
+
+.card-group{
+    padding-bottom: 50px;
+    display: block;
+    margin: auto;
+    flex: 25;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.card-title{
+    color: darkslategrey;
+}
+
+#ActuTitre h2{
+    color: grey;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.orangeSection h2,#Diplomes, #Chiffres, #Rentree{
+    color: white;
+    background-color: orange;
+    padding : 20px 0;
+}
+
+
+.card-text{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 23.8px;
+    color: gray;
+}
+
+.center-item{
+    display: block;
+    margin: auto;
+    flex: 25;
+}
+
+#conteneur{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+/* ---PROPRIETES DES BOUTONS --- */
+
+.button {
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid rgb(228, 165, 3);
+    color: rgb(228, 165, 3);
+    text-align: center;
+    font-size: 16px;
+    
+    transition: all 0.3s;
+    margin: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.7em !important;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700 !important;
+    display: inline-block;
+    border-right-width: 2px;
+}
+
+.button a{
+    color: rgb(228, 165, 3);
+}
+
+a .button:hover{
+    color: rgb(228, 165, 3)!important;
+}
+
+.button span {
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.button:hover span {
+    padding-right: 35px;  
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*--- CANDIDATURE ---*/
+
+#Candidatures{
+    padding :60px 0;
+    text-align : center;
+}
+
+.test{
+    margin: 0 10%;
+}
+
+footer {
+    position : relative;	
+	bottom : 0px;
+	width : 100%;
+	background-color : rgb(209, 38, 38);
+	color : white;
+}
+
+/* --- FOOTER --- */
+
+#Footer{
+    background-color: rgb(209, 38, 38);
+    color:white;
+    padding: 10%;
+}
+
+a:hover #Footer{
+    color:white;
+}
+
+.main-content {
+    display : flex;
+}
+
+.main-content .box{
+    flex-basis : 50%;
+	padding : 10px 20px;
+}
+
+.box h5 {
+	font-size : 1.125rem;
+	font-weight : 600;
+}
+
+.box .content {
+	margin : 20px 0 0 0;
+}
+
+.left .content .p{
+    text-align : justify;
+}
+
+.center .content a:hover {
+	color : white;
+	text-decoration : none;
+}
+
+.white {
+	color : white;
+}
+
+/*---- RESPONSIVITE ----*/
+
+@media screen and (max-width : 980px){
+
+    #imgTitre{
+        display: none!important;
+    }
+    
+    span.compteur.resultat{
+        color: #666666;
+        font-weight: normal;
+        font-size : 72;
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+
+    .boîte-principale {
+		flex-wrap : wrap;
+		flex-direction : column;
+		background-image : none;
+	}
+	
+	.bordure {
+		border : 2px solid  rgb(209, 38, 38);
+	}
+	
+	.arrondie {
+		border-radius : 0;
+	}
+	
+	#Rentrée * {
+		margin : 0px;
+	}
+	
+	#Rentrée h1 {
+		font-weight : bold;
+	}
+	
+	#Rentrée a {
+		color :  rgb(209, 38, 38);
+	}
+	
+	.orangeSection {
+		color : black;
+		background-color : white;
+	}
+	
+	#Rentrée div:hover {
+		background-color : lightgray ;
+	}
+	
+	#site-iut {
+		display : none;
+	}
+	
+    footer{
+		position : relative;
+		bottom : 0px;
+	}
+	
+	.main-content {
+		flex-wrap : wrap;
+		flex-direction : column;
+    }
+
+    .button{
+        border: 3px solid #cf0a2c;
+        border-radius: unset;
+        color: #cf0a2c;
+        padding: 0.3em 1em;
+    }
+
+    .button:hover span{
+        background-color: transparent;
+        color: #666;
+        border-color: transparent;
+    }
+    
+    .button a{
+        color: #cf0a2c;
+    }
+
+    /*Diplomes*/
+  
+    #Diplomes{
+      color:#666666;
+      font-size: 14px;
+    }
+      
+    #soustitre{
+        font-size:18px;
+        color:#555555;
+    }
+      
+    .diplome{
+        background-color: white;
+        font-size:14px;
+        color:#666666;
+    }
+
+    .image2{
+        display:block;
+    }
+
+    .image1{
+        display:none; 
+    }
+}
+
+@media screen and (max-width : 620px){
+
+    .grid-container {
+        display: inline-block!important;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .grid-item {
+        display: grid!important;
+        padding-top: 1%!important;
+    }
+
+    #Menu-Responsive{
+        display: block;
+        text-align: center;
+        padding: 3px;
+        border: solid 1px black;
+    }
+
+    #Covid-19 {
+        padding-left: 3%;
+    }
+
+    #Institut, #Formations, #Entreprises, #International, #VieIUT{ 
+        display: none;
+        position: relative;
+    }
+
+    #Menu-Responsive:active, #Institut, #Formations, #Entreprises, #International, #VieIUT{ 
+        display: grid!important;
+    }
+    
+   #DeroulantInstitut, #DeroulantFormations, #DeroulantEntreprises, #DeroulantInternational, #DeroulantVieIUT{
+        display: none;
+        position: absolute;
+        text-align: left;
+        
+        margin-top: 6%!important;
+        padding: 1em!important;
+    
+        background: rgba(240,240,240,1.0);
+    
+        min-width: 5em;
+        z-index:99;
+    }
+    
+    #Institut:hover #DeroulantInstitut{
+        display: grid;
+    }
+    
+    #Formations:hover #DeroulantFormations{
+        display: grid;  
+    }
+    
+    #Entreprises:hover #DeroulantEntreprises{
+        display: grid;
+    }
+    
+    #International:hover #DeroulantInternational{
+        display: grid;
+    }
+    
+    #VieIUT:hover #DeroulantVieIUT{
+        display: grid;
+    }
+}

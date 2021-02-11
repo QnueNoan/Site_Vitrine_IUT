@@ -1,0 +1,18 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 350px;
+  }
+
+.footer {
+    background-color: #CF0A2C;
+    color: white;
+    bottom: 0;
+}
+.ouistiti {
+    font-size: 15px;
+    line-height: 150%;
+
+}
